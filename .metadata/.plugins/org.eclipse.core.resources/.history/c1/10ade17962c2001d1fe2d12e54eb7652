@@ -1,0 +1,25 @@
+package com.Catlog.Service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.Catlog.Model.CatlogModel;
+
+@Service
+public class CatlogServiceImpl implements CatlogService{
+	
+	private ProductDetailsRepository menuRepository;
+
+	public ProductDetailsServiceImpl(ProductDetailsRepository menuRepository) {
+		super();
+		this.menuRepository = menuRepository;
+	}
+
+	@Override
+	public List<CatlogModel> getProductDetailsByCategory(String category) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

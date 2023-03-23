@@ -1,0 +1,28 @@
+package com.Search.Controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.Catlog.Model.CatlogModel;
+import com.Search.Service.SearchService;
+
+public class SearchController {
+	
+	private SearchService searchservice;
+
+	public SearchController(SearchService searchservive) {
+		super();
+		this.searchservice = searchservice;
+	}
+	
+	@GetMapping("/get/{category}")
+	public List<CatlogModel> getProductDetailsByCategory(@PathVariable("category") String category){
+		
+		return catlogservice.getProductDetailsByCategory(category);
+	
+	}
+	
+
+}

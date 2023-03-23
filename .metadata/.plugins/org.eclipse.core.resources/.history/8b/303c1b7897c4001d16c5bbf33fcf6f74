@@ -1,0 +1,24 @@
+package com.Search.Controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.Search.Service.SearchService;
+
+public class SearchController {
+	
+	private SearchService searchservice;
+
+	public SearchController(SearchService searchservive) {
+		super();
+		this.searchservive = searchservive;
+	}
+	
+	@GetMapping
+	public List<String> getAllProducts(){
+		return searchservice.getAllProducts();
+	}
+	
+
+}

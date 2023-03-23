@@ -1,0 +1,9 @@
+package com.Catlog.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.Catlog.Model.CatlogModel;
+
+public interface CatlogRepository extends JpaRepository<CatlogModel, Long> {
+
+}

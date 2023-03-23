@@ -1,0 +1,29 @@
+package com.Search.Controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+
+import com.Search.Model.SearchModel;
+import com.Search.Service.SearchService;
+
+public class SearchController {
+	
+	private SearchService searchservice;
+
+	public SearchController(SearchService searchservive) {
+		super();
+		this.searchservive = searchservive;
+	}
+	
+	@GetMapping("/get/{name}")
+	public List<SearchModel> getProductDetailsByName(@PathVariable("name") String name){
+		
+		return searchservice.getProductDetailsByName(name);
+	
+	}
+	
+
+}

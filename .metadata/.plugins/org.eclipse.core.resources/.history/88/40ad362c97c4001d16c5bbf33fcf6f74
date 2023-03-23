@@ -1,0 +1,16 @@
+package com.Search.Controller;
+
+import com.Search.Service.SearchService;
+
+public class SearchController {
+	
+	private SearchService searchservive;
+
+	public SearchController(SearchService searchservive) {
+		super();
+		this.searchservive = searchservive;
+	}
+	
+	
+
+}

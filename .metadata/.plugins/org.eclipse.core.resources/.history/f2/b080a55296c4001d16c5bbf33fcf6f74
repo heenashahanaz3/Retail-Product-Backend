@@ -1,0 +1,36 @@
+package com.Search.Service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.Search.Model.SearchModel;
+import com.Search.Repository.SearchRepository;
+
+@Service
+public class SearchServiceImpl implements SearchService{
+	
+	private SearchRepository searchrepository;
+
+
+	public SearchServiceImpl(SearchRepository searchrepository) {
+		super();
+		this.searchrepository = searchrepository;
+	}
+
+
+
+	public SearchServiceImpl() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+	@Override
+	public List<SearchModel> searchByname(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.Search.Service;
+
+
+import java.util.List;
+
+import com.Search.Model.SearchModel;
+
+public interface SearchService {
+	SearchModel searchByname(String name); 
+	List<SearchModel> searchproduct(String name);
+}

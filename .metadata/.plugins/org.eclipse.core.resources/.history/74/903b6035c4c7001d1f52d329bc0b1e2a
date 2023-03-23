@@ -1,0 +1,8 @@
+package com.Search.Service;
+
+
+import com.Search.Model.SearchModel;
+
+public interface SearchService {
+	SearchModel searchByname(String name); 
+}

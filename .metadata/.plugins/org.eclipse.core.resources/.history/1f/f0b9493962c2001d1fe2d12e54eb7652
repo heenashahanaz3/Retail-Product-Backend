@@ -1,0 +1,15 @@
+package com.Catlog.Service;
+
+import java.util.List;
+
+import com.Catlog.Model.CatlogModel;
+
+public class CatlogServiceImpl implements CatlogService{
+
+	@Override
+	public List<CatlogModel> getProductDetailsByCategory(String category) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

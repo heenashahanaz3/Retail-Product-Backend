@@ -1,0 +1,16 @@
+package com.Search.Repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.Search.Model.SearchModel;
+
+public interface SearchRepository extends JpaRepository<SearchModel, Long>{
+	
+	@Query(value = "SELECT * FROM products.productdetails where name = ?;", nativeQuery = true)
+	SearchModel searchByname(String name); 
+	
+	@Query(value = "select * from products.productdetails where name like '%:?%';", nativeQuery = true)
+	SearchModel searchproduct(String name);
+}

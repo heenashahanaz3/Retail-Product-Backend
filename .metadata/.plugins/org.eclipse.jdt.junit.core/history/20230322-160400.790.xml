@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CatlogMicroserviceApplicationTests" project="Catlog-Microservice" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.Catlog.CatlogMicroserviceApplicationTests" time="1.124" displayname="CatlogMicroserviceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.Catlog.CatlogMicroserviceApplicationTests]">
+    <testcase name="getallcategories" classname="com.Catlog.CatlogMicroserviceApplicationTests" time="1.1" displayname="getallcategories()" uniqueid="[engine:junit-jupiter]/[class:com.Catlog.CatlogMicroserviceApplicationTests]/[method:getallcategories()]"/>
+    <testcase name="testgetbycategory" classname="com.Catlog.CatlogMicroserviceApplicationTests" time="0.024" displayname="testgetbycategory()" uniqueid="[engine:junit-jupiter]/[class:com.Catlog.CatlogMicroserviceApplicationTests]/[method:testgetbycategory()]"/>
+  </testsuite>
+</testrun>

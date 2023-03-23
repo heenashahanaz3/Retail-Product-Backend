@@ -1,0 +1,5 @@
+package com.Search.Service;
+
+public interface SearchService {
+
+}

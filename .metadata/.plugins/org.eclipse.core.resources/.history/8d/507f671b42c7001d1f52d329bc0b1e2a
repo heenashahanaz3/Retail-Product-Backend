@@ -1,0 +1,61 @@
+package com.Cart.Service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.Cart.Model.CartModel;
+import com.Cart.Repository.CartRepository;
+import com.Cart.exception.ProductNotFoundException;
+
+@Service
+public class CartServiceImpl implements CartService{
+	
+	private CartRepository cartrepository;
+	
+
+	public CartServiceImpl(CartRepository cartrepository) {
+		super();
+		this.cartrepository = cartrepository;
+	}
+
+
+
+	@Override
+	public String addcartbyUserIdAndproductId(CartModel Cart) throws ProductNotFoundException {
+		// TODO Auto-generated method stub
+		if(getById(Cart.getEmail().toString())) {
+			cartrepository.save(Cart);
+			return Cart.getCart();
+		}
+		else {
+			CartModel existingcart = cartrepository.findById(Cart.getEmail()).orElseThrow(() -> new ProductNotFoundException(null));
+			existingcart.setCart(Cart.getCart());
+			cartrepository.save(existingcart);
+			return existingcart.getCart();
+		}
+	}
+	
+	
+
+	@Override
+	public String getbyemail(String email) {
+		// TODO Auto-generated method stubSS
+		return cartrepository.getcartbyemail(email);
+	}
+
+
+
+	@Override
+	public boolean getById(String email){
+		// TODO Auto-generated method stub
+		String res = cartrepository.checkcart(email);
+		if(res != "") {
+			return true;
+		}
+		return false;
+	}
+
+
+}
+	

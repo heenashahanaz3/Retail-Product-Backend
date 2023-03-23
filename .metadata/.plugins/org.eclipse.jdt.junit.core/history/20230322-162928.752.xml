@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginMvc1ApplicationTests" project="UserSignUp Microservice" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.Usersignup.LoginMvc1ApplicationTests" time="1.294" displayname="LoginMvc1ApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.Usersignup.LoginMvc1ApplicationTests]">
+    <testcase name="testSignup" classname="com.Usersignup.LoginMvc1ApplicationTests" time="1.185" displayname="testSignup()" uniqueid="[engine:junit-jupiter]/[class:com.Usersignup.LoginMvc1ApplicationTests]/[method:testSignup()]"/>
+    <testcase name="testupdate" classname="com.Usersignup.LoginMvc1ApplicationTests" time="0.034" displayname="testupdate()" uniqueid="[engine:junit-jupiter]/[class:com.Usersignup.LoginMvc1ApplicationTests]/[method:testupdate()]"/>
+    <testcase name="testgetuser" classname="com.Usersignup.LoginMvc1ApplicationTests" time="0.044" displayname="testgetuser()" uniqueid="[engine:junit-jupiter]/[class:com.Usersignup.LoginMvc1ApplicationTests]/[method:testgetuser()]"/>
+    <testcase name="testdeleteuser" classname="com.Usersignup.LoginMvc1ApplicationTests" time="0.028" displayname="testdeleteuser()" uniqueid="[engine:junit-jupiter]/[class:com.Usersignup.LoginMvc1ApplicationTests]/[method:testdeleteuser()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CheckoutMicroserviceApplicationTests" project="Checkout-Microservice" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.CartCheckout.CheckoutMicroserviceApplicationTests" time="1.298" displayname="CheckoutMicroserviceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.CartCheckout.CheckoutMicroserviceApplicationTests]">
+    <testcase name="testaddorder" classname="com.CartCheckout.CheckoutMicroserviceApplicationTests" time="1.248" displayname="testaddorder()" uniqueid="[engine:junit-jupiter]/[class:com.CartCheckout.CheckoutMicroserviceApplicationTests]/[method:testaddorder()]"/>
+    <testcase name="testgetorderbyid" classname="com.CartCheckout.CheckoutMicroserviceApplicationTests" time="0.049" displayname="testgetorderbyid()" uniqueid="[engine:junit-jupiter]/[class:com.CartCheckout.CheckoutMicroserviceApplicationTests]/[method:testgetorderbyid()]"/>
+  </testsuite>
+</testrun>

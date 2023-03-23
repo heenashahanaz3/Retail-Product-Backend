@@ -1,0 +1,18 @@
+package com.Catlog.Controller;
+
+import com.Catlog.Service.CatlogService;
+
+
+public class CatlogController {
+	
+	private CatlogService catlogservice;
+	
+	public CatlogController(CatlogService userservice) {
+		super();
+		this.catlogservice = catlogservice;
+	}
+	
+	
+	
+
+}

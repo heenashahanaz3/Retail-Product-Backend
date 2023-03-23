@@ -1,0 +1,29 @@
+package com.Search.Controller;
+
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.Search.Model.SearchModel;
+import com.Search.Service.SearchService;
+
+public class SearchController {
+	
+	private SearchService searchservice;
+
+	public SearchController(SearchService searchservice) {
+		super();
+		this.searchservice = searchservice;
+	}
+	
+	@GetMapping("/get/{id}")
+	public ResponseEntity<ProductDetailsModel> getMenuItem(@PathVariable("id") Long id) throws ProductNotFoundException{
+		
+		return new ResponseEntity<ProductDetailsModel> (menuItemService.getMenuItem(id), HttpStatus.OK);
+	}
+	
+
+}

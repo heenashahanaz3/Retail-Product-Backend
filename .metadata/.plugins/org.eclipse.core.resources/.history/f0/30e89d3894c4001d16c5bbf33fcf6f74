@@ -1,0 +1,5 @@
+package com.Search.Repository;
+
+public interface SearchRepository {
+
+}

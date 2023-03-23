@@ -1,0 +1,10 @@
+package com.ProductDetails.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.ProductDetails.model.ProductDetailsModel;
+@Repository
+public interface ProductDetailsRepository extends JpaRepository<ProductDetailsModel,Long>{
+
+}

@@ -1,0 +1,9 @@
+package com.Search.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.Search.Model.SearchModel;
+
+public interface SearchRepository extends JpaRepository<SearchModel, Long>{
+
+}

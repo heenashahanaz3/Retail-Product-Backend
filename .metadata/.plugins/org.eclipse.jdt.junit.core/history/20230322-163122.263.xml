@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserLoginMicroserviceApplicationTests" project="UserLogin-Microservice" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.UserLogin.UserLoginMicroserviceApplicationTests" time="1.252" displayname="UserLoginMicroserviceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.UserLogin.UserLoginMicroserviceApplicationTests]">
+    <testcase name="testLogin" classname="com.UserLogin.UserLoginMicroserviceApplicationTests" time="1.251" displayname="testLogin()" uniqueid="[engine:junit-jupiter]/[class:com.UserLogin.UserLoginMicroserviceApplicationTests]/[method:testLogin()]"/>
+  </testsuite>
+</testrun>
